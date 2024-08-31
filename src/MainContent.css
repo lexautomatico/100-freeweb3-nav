@@ -1,0 +1,159 @@
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .image-link {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5px; /* Remove gap between images */
+  }
+  
+  .image-link img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .link {
+    position: absolute;
+    display: block;
+    /* border: 1px solid red;  */
+  }
+
+
+
+
+
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  
+
+
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown-label {
+    display: none;
+    margin-left: 8px; /* Adjust spacing between icon and label */
+  }
+  
+  .dropdown:hover .dropdown-label {
+    display: inline;
+  }
+  
+
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: max-content; /* Set width to fit content */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    white-space: normal; /* Enable text wrapping */
+  }
+  
+
+
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'EB Garamond', serif; */
+  }
+  
+
+  .dropdown-content.right-aligned {
+    left: auto;
+    right: 0;
+  }
+  
+  /* Example usage of Lato and EB Garamond */
+  body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'EB Garamond', serif; */
+  }
+  
+  h1, h2, h3 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'EB Garamond', serif; */
+  }
+
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .video-container {
+    width: 100vw; /* 100% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Positioning context for the video player */
+    left: 50%; /* Move the container half its width to the left */
+    right: 50%; /* Move the container half its width to the right */
+    margin-left: -50vw; /* Negative left margin of half the viewport width */
+    margin-right: -50vw; /* Negative right margin of half the viewport width */
+  }
+
+
